@@ -13,7 +13,7 @@ let sum45 = lab45[0] +lab45[1] +lab45[2] +lab45[3] +lab45[4] +lab45[5] +lab45[6]
 let sum6 = lab6[0] +lab6[1] +lab6[2] +lab6[3] +lab6[4] +lab6[5];
 
 let sums = [sum1,sum2,sum3,sum45,sum6]
-let totalscore= (sums[0]+sums[1]+sums[2]+sums[3]+sums[4])*0.6 + quiz1[0]*0.4
+let totalscore= ((sums[0]+sums[1]+sums[2]+sums[3]+sums[4])/240)*60 + (quiz1[0]/40)*40
 const results = {
 	lab1: [5,5,5,5,10,10],
 	lab2: [5,5,5,5,5,5,10],
@@ -22,7 +22,7 @@ const results = {
 	lab6: [5,5,10,0,5,10],
 	quiz1: [36],
 	sums: [sum1,sum2,sum3,sum45,sum6],
-	totalscore: (sums[0]+sums[1]+sums[2]+sums[3]+sums[4])*0.6 + quiz1[0]*0.4
+	totalscore: ((sums[0]+sums[1]+sums[2]+sums[3]+sums[4])/240)*60 + (quiz1[0]/40)*40
 
 }
 console.log(results)
